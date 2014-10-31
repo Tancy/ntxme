@@ -1,0 +1,11 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: Tancy/晓田
+url: http://ntx.me
+feed: /atom.xml
+author_info: <a href="http://ntx.me/">Tancy/晓田</a>
