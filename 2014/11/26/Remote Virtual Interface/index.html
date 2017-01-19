@@ -1,0 +1,677 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+  <link href='http://fonts.useso.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+
+
+  <meta name="keywords" content="Debug,RVI," />
+
+
+
+  <link rel="alternate" href="/ture" title="Tancy's Blog" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    analytics: {
+      google: ''
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+
+
+  <title> Remote Virtual Interface // Tancy's Blog </title>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div class="headband">
+      <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Tancy's Blog</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+    </div>
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            <i class="menu-item-icon icon-about"></i> <br />
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            Tags
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              Remote Virtual Interface
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on 2014-11-26
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2014/11/26/Remote Virtual Interface/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2014/11/26/Remote Virtual Interface/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <h1 id="Remote_Virtual_Interface">Remote Virtual Interface</h1><p>Remote Virtual Interface 可以直接将iOS设备映射成为Mac上的一块网卡。在Mac上，便可以使用常用的流量监控工具对这块虚拟网卡的流量进行监控.</p>
+<h2 id="创建RVI">创建RVI</h2><hr>
+<p>Apple在iOS5.0以上增加了RVI（Remote Virtual Interface），打开他非常简单，只需要把iOS设备通过USB连接到MAC上，然后打开“终端”，输入</p>
+<pre><code><span class="keyword">rvictl</span> -s<span class="sqbracket"> [你的设备UDID]</span>
+</code></pre><p>然后在终端上会显示</p>
+<pre><code>Starting device <span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span><span class="keyword">*</span>[succeeded ]
+</code></pre><p>如果这一步产生了什么错误的话，可能是没有安装XCode 或者UDID 输入错误</p>
+<p>接下来在终端可以使用</p>
+<pre><code>ifconfig <span class="operator">-l</span>
+</code></pre><p>查看当前Mac上的接口，比如（不同Mac可能会有差异）：</p>
+<pre><code>l<span class="preprocessor">o0</span> gif<span class="number">0</span> e<span class="label">n0</span> e<span class="label">n1</span> fw<span class="number">0</span> rvi<span class="number">0</span>
+</code></pre><p>其中rvi0就是 Remote Virtual Interface，这也就意味着在你的Mac上虚拟了一个iOS设备接口。</p>
+<h4 id="UDID查找方法">UDID查找方法</h4><ul>
+<li><p>通过Terminal获取：</p>
+<pre><code>system_profiler SPUSBDataType | sed -n <span class="operator">-e</span> <span class="string">'/iPad/,/Serial/p'</span> <span class="operator">-e</span> <span class="string">'/iPhone/,/Serial/p'</span> | grep <span class="string">"Serial Number:"</span> | awk -F <span class="string">": "</span> <span class="string">'{print $2}'</span>
+</code></pre></li>
+</ul>
+<ul>
+<li><p>将iOS设备连接到电脑，打开iTunes点击到iPhone，点击序列号切换到UDID为止 如图：</p>
+<p>  <img src="http://gtms01.alicdn.com/tps/i1/TB1DESLGFXXXXb5XVXXBSDg8pXX-1089-685.png" alt="iPhone"></p>
+<p>  <img src="http://gtms04.alicdn.com/tps/i4/TB1Z0pQGVXXXXc3XVXXH5P47XXX-1090-686.png" alt="iPhone"></p>
+</li>
+</ul>
+<h2 id="实时分析">实时分析</h2><hr>
+<p>使用Wireshark 来查看实时数据包。打开软件后选择我们刚才创建的rvi0 虚拟接口，点击进入就可以查看到iPhone的数据包。</p>
+<p><img src="http://gtms02.alicdn.com/tps/i2/TB1rc1fGFXXXXcdaXXXEHCB_FXX-981-612.png" alt="Wireshark主界面"></p>
+<p><img src="http://gtms03.alicdn.com/tps/i3/TB1P_9LGFXXXXbpaXXXVXGS2pXX-1106-612.png" alt="实时抓包数据"></p>
+<h2 id="抓包成PCAP文件">抓包成PCAP文件</h2><hr>
+<p>通过Tcpdump抓取这个接口上的数据包</p>
+<pre><code>sudo tcpdump -<span class="tag">i</span> rvi0 -n -s <span class="number">0</span> -w test<span class="class">.pcap</span> tcp
+</code></pre><p>解释一下上面重要参数的含义：</p>
+<ul>
+<li><p>-i rvi0 选择需要抓取的接口为rvi0（Remote Virtual Interface）</p>
+</li>
+<li><p>-s 0  抓取全部数据包</p>
+</li>
+<li><p>-w test.pcap 设置保存的文件名</p>
+</li>
+<li><p>tcp 只抓取tcp包</p>
+</li>
+</ul>
+<p>当tcpdump运行之后，你可以在iOS设备上开始浏览你想抓取的App，期间产生的数据包均会保存到test.pcap文件中，想要结束抓取直接终止tcpdump即可，Ctrl+C<br>接下来可以用Wireshark,Charles 等工具分析test.pcap文件。</p>
+<h2 id="tcpdump_参数说明">tcpdump 参数说明</h2><hr>
+<p>官方文档：<a href="http://www.tcpdump.org/" target="_blank" rel="external">http://www.tcpdump.org/</a></p>
+<pre><code><span class="tag">tcpdump</span> <span class="attr_selector">[ -adeflnNOpqStvx ]</span> <span class="attr_selector">[ -c 数量 ]</span> <span class="attr_selector">[ -F 文件名 ]</span>
+               <span class="attr_selector">[ -i 网络接口 ]</span> <span class="attr_selector">[ -r 文件名 ]</span> <span class="attr_selector">[ -s snaplen ]</span>
+               <span class="attr_selector">[ -T 类型 ]</span> <span class="attr_selector">[ -w 文件名  ]</span> <span class="attr_selector">[ 表达式 ]</span>
+</code></pre><h3 id="选型介绍：">选型介绍：</h3><ul>
+<li><p>-a          将网络地址和广播地址转变成名字 </p>
+</li>
+<li><p>-d          将匹配信息包的代码以人们能够理解的汇编格式给出</p>
+</li>
+<li><p>-dd        将匹配信息包的代码以C语言程序段的格式给出</p>
+</li>
+<li><p>-ddd      将匹配信息包的代码以十进制的形式给出  </p>
+</li>
+<li><p>-e          将捕获的包数显示出来</p>
+</li>
+<li><p>-f          将外部的Internet地址以数字的形式打印出来；</p>
+</li>
+<li><p>-l          使标准输出变为缓冲形式；</p>
+</li>
+<li><p>-n         不把网络地址转换成名字；</p>
+</li>
+<li><p>-t          在输出的每一行不打印时间戳；</p>
+</li>
+<li><p>-v          输出一个稍微详细的信息，例如在ip包中可以包括ttl和服务类型的信息；          </p>
+</li>
+<li><p>-vv        输出详细的报文信息；</p>
+</li>
+<li><p>-c          在收到指定的包的数目后，tcpdump就会停止；</p>
+</li>
+<li><p>-F          从指定的文中读取表达式，忽略其它的表达式；</p>
+</li>
+<li><p>-i          指定监听的网络接口；</p>
+</li>
+<li><p>-r          从指定的文件中读取包(这些包一般通过 -w 选项产生)</p>
+</li>
+<li><p>-w          直接将包写入文件中，并不分析和打印出来</p>
+</li>
+<li><p>-T          将监听到的包直接解释为制定的类型的报文，常见的类型有rpc（远程过程调用）和 snmp（简单网络管理协议）</p>
+</li>
+</ul>
+<h2 id="PCAP查看软件">PCAP查看软件</h2><hr>
+<p>Mac下X11 地址：<a href="http://xquartz.macosforge.org/trac" target="_blank" rel="external">http://xquartz.macosforge.org/trac</a></p>
+<p>Wireshark官方文档：<a href="http://www.wireshark.org/" target="_blank" rel="external">http://www.wireshark.org/</a></p>
+<hr>
+<p>晓田 ronntx@gmail.com</p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Debug/"> #Debug </a>
+          
+            <a href="/tags/RVI/"> #RVI </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/03/02/checkList/">性能 CheckList  v1.0</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/10/03/alimf/">Alimf</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="2014/11/26/Remote Virtual Interface/"
+               data-title="Remote Virtual Interface" data-url="http://ntx.me/2014/11/26/Remote Virtual Interface/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="http://tp1.sinaimg.cn/1668657060/180/5654317964/1" alt="Tancy/晓田" />
+          <p class="site-author-name">Tancy/晓田</p>
+        </div>
+        <p class="site-description motion-element"></p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">categories</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/ture">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/tancy" target="_blank">github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/ronntx" target="_blank">twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/tancy" target="_blank">weibo</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+        
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Remote_Virtual_Interface"><span class="nav-number">1.</span> <span class="nav-text">Remote Virtual Interface</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建RVI"><span class="nav-number">1.1.</span> <span class="nav-text">创建RVI</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UDID查找方法"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">UDID查找方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实时分析"><span class="nav-number">1.2.</span> <span class="nav-text">实时分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抓包成PCAP文件"><span class="nav-number">1.3.</span> <span class="nav-text">抓包成PCAP文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tcpdump_参数说明"><span class="nav-number">1.4.</span> <span class="nav-text">tcpdump 参数说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选型介绍："><span class="nav-number">1.4.1.</span> <span class="nav-text">选型介绍：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PCAP查看软件"><span class="nav-number">1.5.</span> <span class="nav-text">PCAP查看软件</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp;  2014 - 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">Tancy/晓田</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252904265'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1252904265' type='text/javascript'%3E%3C/script%3E"));</script>    </div>
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"ntx"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+
+
+  
+  
+
+</body>
+</html>
