@@ -1,0 +1,19 @@
+<div class="col-lg-4 col-md-6 col-12 mb-5">
+  <div class="post-card" title="<%- post.title || theme.default_post_title || "Untitled" %>">
+    <div class="image-box">
+      <div class="post-image">
+        <a href="<%- config.root %><%- post.path %>">
+          <img class="img-fluid" src="<%- config.root %><%- post.cover_image || theme.default_cover_image %>" alt="<%- post.title || theme.default_post_title || "Untitled" %>">
+        </a>
+      </div>
+    </div>
+    <div class="post-details text-center mt-3 col-md-12">
+      <a href="<%- config.root %><%- post.path %>" ><%- post.title || theme.default_post_title || "Untitled" %></a>
+      <hr>
+      <span class="date">
+          <%- partial('post/date', {class_name: 'article-date', date_format: 'MMM D YYYY'}) %>
+      </span>
+      <!-- <div class="text-desc text-left"><%- post.description %></div> -->
+    </div>
+  </div>
+</div>
