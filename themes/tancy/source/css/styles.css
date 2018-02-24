@@ -228,6 +228,12 @@ input:focus, textarea:focus {
 	margin-bottom: 10px;
 }
 
+.row p img{
+	width: 100%;
+}
+
+
+
 /* Footer
 —————————————————————————————————————————————————————————————————————— */
 
