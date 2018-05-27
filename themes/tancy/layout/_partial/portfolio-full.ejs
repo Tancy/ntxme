@@ -18,6 +18,25 @@
       </span>
     </div>
     <%- post.content %>
+    <% if (post.comments){ %>           
+      <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>
+      var gitment = new Gitment({
+        id: '<%= page.title %>', 
+        owner: 'tancy',
+        repo: 'ntxme',
+        oauth: {
+          client_id: 'eeccaa2d13005ac6c4b6',
+          client_secret: '7507c95b70ceb83ff73498276a713aea0c27b595',
+        },
+        cleanly: true,
+      })
+      gitment.render('container')
+      </script>
+
+    <% } %>
     </div>
   </div>
  
