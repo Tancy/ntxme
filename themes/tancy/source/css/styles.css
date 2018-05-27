@@ -1,6 +1,6 @@
 body {
-	font-family: 'EB Garamond', serif;
-	font-size: 1.25rem;
+	font-family: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
+	font-size: 16px;
 	color: #333;
 }
 
@@ -132,7 +132,7 @@ input:focus, textarea:focus {
 .image-box {
 	position: relative;
 	border-radius: 5px;
-
+	height: 120px;
 }
 
 .text-desc{
@@ -168,7 +168,7 @@ input:focus, textarea:focus {
 }
 
 .post-details {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	
 }
 .post-details a{
@@ -176,6 +176,8 @@ input:focus, textarea:focus {
 	max-height: 31px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
 }
 .post-details hr {
 	border-color: #999;
@@ -184,7 +186,7 @@ input:focus, textarea:focus {
 	margin-bottom: 0px;
 }
 
-.date {
+.date,.pv {
 	color: #666;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -210,11 +212,14 @@ input:focus, textarea:focus {
 
 /* Post Page
 —————————————————————————————————————————————————————————————————————— */
-
+p{
+	font-family: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif
+}
 .cover-image {
 	width: 100%;
 	max-height: 500px;
 	object-fit: cover;
+	border-radius: 4px; 
 }
 
 .post-page h1 {

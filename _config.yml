@@ -22,7 +22,6 @@ permalink_defaults:
 menu:
   Home: /
   About: /about
-  Contact: /contact
 
 # Directory
 source_dir: source
