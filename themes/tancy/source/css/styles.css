@@ -2,6 +2,8 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 	font-size: 16px;
 	color: #333;
+	-webkit-font-smoothing: antialiased;
+
 }
 
 a, a:visited, a:active, a:focus {
@@ -215,7 +217,7 @@ input:focus, textarea:focus {
 /* Post Page
 —————————————————————————————————————————————————————————————————————— */
 p{
-	font-family: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif
+	font-family: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 }
 .cover-image {
 	width: 100%;
