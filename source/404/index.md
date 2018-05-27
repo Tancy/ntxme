@@ -4,5 +4,11 @@ toc: false
 comments: false
 permalink: /404
 ---
+<br/>
+<br/>
+<div style="font-size:100px;">404 </div>
 
-# 404 Not Found
+### We couldn’t find this page.
+
+<br/>
+<br/><br/><br/><br/><br/>
