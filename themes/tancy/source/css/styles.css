@@ -194,7 +194,9 @@ input:focus, textarea:focus {
 	font-weight: 300;
 	letter-spacing: 2px;
 }
-
+.gitment-footer-container{
+	display: none;
+}
 /* Pagination
 —————————————————————————————————————————————————————————————————————— */
 
