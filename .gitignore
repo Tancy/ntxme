@@ -4,7 +4,7 @@ logs/
 *.log
 *-run/
 app/proxy*
-mocks_data/proxy/**/__*
+mocks_/images/DeepPainterlyHarmonization/data/proxy/**/__*
 .idea/
 assembly/
 target/
@@ -20,3 +20,4 @@ dump.rdb
 *.swp
 *.log
 npm-debug.log
+package-lock.json

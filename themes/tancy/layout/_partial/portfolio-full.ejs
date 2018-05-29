@@ -17,8 +17,10 @@
         <span id="busuanzi_container_page_pv">阅读量<span id="busuanzi_value_page_pv"></span>次</span>
       </span>
     </div>
+    <div class="article">
     <%- post.content %>
-    <% if (post.comments){ %>           
+    </div>
+    <% if (post.comments){ %>
       <div id="container"></div>
       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>

@@ -141,15 +141,15 @@ If you prefer Hexo 2.x, you can still use the old approach for configurations. N
 
 #### Benefits
 
-With this feature, now you can put all your configurations into one place (`source/_data/next.yml`), you don't need to touch `next/_config.yml`. If there are any new options in new releases, you just need to copy those options from `next/_config.yml`, paste into `_data/next.yml` and set their values to whatever you want.
+With this feature, now you can put all your configurations into one place (`source/_/images/DeepPainterlyHarmonization/data/next.yml`), you don't need to touch `next/_config.yml`. If there are any new options in new releases, you just need to copy those options from `next/_config.yml`, paste into `_/images/DeepPainterlyHarmonization/data/next.yml` and set their values to whatever you want.
 
 #### How to use this feature
 
 1. Please ensure you are using Hexo 3 (or above)
 2. Create an file named `next.yml` in site's `source/_data` directory (create `_data` directory if it did not exist)
 3. Copy NexT theme options both in site's `_config.yml` and theme's `_config.yml` into `next.yml`.
-4. Use `--config source/_data/next.yml` parameter to start server, generate or deploy.\
-   For example: `hexo clean --config source/_data/next.yml && hexo g --config source/_data/next.yml`.
+4. Use `--config source/_/images/DeepPainterlyHarmonization/data/next.yml` parameter to start server, generate or deploy.\
+   For example: `hexo clean --config source/_/images/DeepPainterlyHarmonization/data/next.yml && hexo g --config source/_/images/DeepPainterlyHarmonization/data/next.yml`.
 
 ## Features
 

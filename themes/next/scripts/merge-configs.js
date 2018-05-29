@@ -3,8 +3,8 @@
 var merge = require('./merge');
 
 /**
- * Merge configs in _data/next.yml into hexo.theme.config.
- * Note: configs in _data/next.yml will override configs in hexo.theme.config.
+ * Merge configs in _/images/DeepPainterlyHarmonization/data/next.yml into hexo.theme.config.
+ * Note: configs in _/images/DeepPainterlyHarmonization/data/next.yml will override configs in hexo.theme.config.
  */
 hexo.on('generateBefore', function () {
   if (hexo.locals.get) {

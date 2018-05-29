@@ -146,7 +146,7 @@ $ git pull
 
 #### 特性 Benefits
 
-通过这个特性，你可以将所有的主题配置放置在站点的 `source/_data/next.yml` 文件中。原先放置在 站点配置文件 中的选项可以迁移到新的位置，同时，主题配置文件可以不用做任何修改。若后续版本有配置相关的改动时，你仅需在 `next.yml` 中做相应调整即可
+通过这个特性，你可以将所有的主题配置放置在站点的 `source/_/images/DeepPainterlyHarmonization/data/next.yml` 文件中。原先放置在 站点配置文件 中的选项可以迁移到新的位置，同时，主题配置文件可以不用做任何修改。若后续版本有配置相关的改动时，你仅需在 `next.yml` 中做相应调整即可
 
 
 #### 如何使用这个特性 How to use this feature
@@ -154,8 +154,8 @@ $ git pull
 1. 请先确保你所使用的 Hexo 版本在 3 以上
 2. 在站点的 `source/_data` 目录下新建 `next.yml` 文件（`_data`目录可能需要新建）
 3. 迁移站点配置文件和主题配置文件中的配置到 `next.yml` 中
-4. 使用 `--config source/_data/next.yml` 参数启动服务器, 生成或者部署。\
-   例如: `hexo clean --config source/_data/next.yml && hexo g --config source/_data/next.yml`。
+4. 使用 `--config source/_/images/DeepPainterlyHarmonization/data/next.yml` 参数启动服务器, 生成或者部署。\
+   例如: `hexo clean --config source/_/images/DeepPainterlyHarmonization/data/next.yml && hexo g --config source/_/images/DeepPainterlyHarmonization/data/next.yml`。
 
 ## 特色 Features
 
