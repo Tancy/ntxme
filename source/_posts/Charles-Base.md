@@ -2,7 +2,7 @@
 layout: post
 title:  "Charles 基础篇"
 description: Charles是目前最强大的http调试工具之一，本片讲述Charles的基础篇，介绍软件的基本界面，设置和使用方法。
-cover_image: //gtms01.alicdn.com/tps/i1/TB1kJ5uFVXXXXXAXpXXrJ1vVXXX-1304-621.png
+cover_image: https://gtms01.alicdn.com/tps/i1/TB1kJ5uFVXXXXXAXpXXrJ1vVXXX-1304-621.png
 
 categories:
   - Blog

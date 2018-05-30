@@ -2,7 +2,7 @@
 layout: post
 title:  "深度绘画协调 Deep Painterly Harmonization"
 description: P图应该是每个会ps的同学都玩过，要做到以假乱真还是需要强大的ps功底，现在通过深度学习可以做到以假乱真，傻傻分不清楚。
-cover_image: //img.alicdn.com/tfs/TB1crXoubGYBuNjy0FoXXciBFXa-3540-520.jpg
+cover_image: https://img.alicdn.com/tfs/TB1crXoubGYBuNjy0FoXXciBFXa-3540-520.jpg
 categories:
   - Blog
 tag:

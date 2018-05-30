@@ -2,7 +2,7 @@
 layout: post
 title:  "Charles 之SSL"
 description: 本片讲述Charles的高级篇，介绍软件特色功能之SSL。
-cover_image: //gtms01.alicdn.com/tps/i1/TB1kJ5uFVXXXXXAXpXXrJ1vVXXX-1304-621.png
+cover_image: https://gtms01.alicdn.com/tps/i1/TB1kJ5uFVXXXXXAXpXXrJ1vVXXX-1304-621.png
 categories:
   - Blog
 tag:
