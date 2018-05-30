@@ -18,18 +18,31 @@
   <!--Description-->
   <% if (page.description){ %>
       <meta name="description" content="<%= page.description %>">
+      <meta name="twitter:description" content="<%= page.description %>">
+
   <% } else if (config.description){ %>
       <meta name="description" content="<%= config.description %>">
+      <meta name="twitter:description" content="<%= config.description %>">
   <% } else if (page.excerpt){ %>
       <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+      <meta name="twitter:description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+
   <% } else if (page.content){ %>
       <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+      <meta name="twitter:description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <% } %>
 
   <!--Author-->
   <% if (config.author){ %>
       <meta name="author" content="<%= config.author %>">
+      <meta name="twitter:creator" content="<%= config.author %>">
   <% } %>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ntx.me">
+<meta name="twitter:title" content="<%= page.title %>">
+<meta name="twitter:image:src" content="<%- page.cover_image || theme.default_cover_image %>">
+
 
   <!-- Pure CSS -->
   <%- css('css/bootstrap.min.css') %>
