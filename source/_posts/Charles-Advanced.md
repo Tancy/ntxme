@@ -2,7 +2,7 @@
 layout: post
 title:  "Charles 高级篇"
 description: 本片讲述Charles的高级篇，介绍软件的网速模拟功能，牛逼的断点功能，重复发送请求，捕获记录控制。
-cover_image: https://gtms01.alicdn.com/tps/i1/TB14YKiFVXXXXXPaXXXoKiP5pXX-1644-934.png
+cover_image: images/TB14YKiFVXXXXXPaXXXoKiP5pXX-1644-934.png
 categories:
   - Blog
 tag:
