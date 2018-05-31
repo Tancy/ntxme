@@ -142,11 +142,11 @@ input:focus, textarea:focus {
 	color: #666;
 	padding: 25px;
 }
-.image-box:before{
+/* .image-box:before{
 	content: "";
 	display: block;
 	padding-top: 100%;
-}
+} */
 
 .post-image {
 	position:  absolute;
