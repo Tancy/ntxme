@@ -230,8 +230,13 @@ p{
 	border-radius: 4px; 
 }
 .article a,.article a:link, .article a:visited, .article a:focus, .article a:hover, .article a:active{
-	text-decoration: underline;
-	color: #2196F3;
+	/* text-decoration: underline; */
+	/* color: #2196F3; */
+	background: linear-gradient(#fff, #fff) no-repeat scroll 0px 77%/0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 77%/0.05em 1px, linear-gradient(#FFAE00, #FFAE00) repeat-x scroll 0px 77%/1px 1px transparent;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-decoration: none;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+
 }
 
 .post-page h1 {
