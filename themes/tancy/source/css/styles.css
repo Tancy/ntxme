@@ -1,3 +1,7 @@
+::selection {
+  background-color: rgba(255, 174, 0, 0.5);
+  text-shadow: rgba(255, 174, 0, 0.5)
+}
 body {
 	font-family: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 	font-size: 16px;
