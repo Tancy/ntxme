@@ -1,0 +1,380 @@
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility
+}
+
+html {
+  padding: 0 1rem
+}
+
+body {
+  margin: 0 auto;
+  max-width: 632px
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Fakt Air';
+  src: url("../fonts/FaktPro-Air.eot");
+  src: url("../fonts/FaktPro-Air.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Air.woff") format("woff"), url("../fonts/FaktPro-Air.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Fakt Hair';
+  src: url("../fonts/FaktPro-Hair.eot");
+  src: url("../fonts/FaktPro-Hair.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Hair.woff") format("woff"), url("../fonts/FaktPro-Hair.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: normal;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-Thin.eot");
+  src: url("../fonts/FaktPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Thin.woff") format("woff"), url("../fonts/FaktPro-Thin.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: italic;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-ThinItalic.eot");
+  src: url("../fonts/FaktPro-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-ThinItalic.woff") format("woff"), url("../fonts/FaktPro-ThinItalic.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-Light.eot");
+  src: url("../fonts/FaktPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Light.woff") format("woff"), url("../fonts/FaktPro-Light.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-Blond.eot");
+  src: url("../fonts/FaktPro-Blond.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Blond.woff") format("woff"), url("../fonts/FaktPro-Blond.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-Normal.eot");
+  src: url("../fonts/FaktPro-Normal.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Normal.woff") format("woff"), url("../fonts/FaktPro-Normal.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-Medium.eot");
+  src: url("../fonts/FaktPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-Medium.woff") format("woff"), url("../fonts/FaktPro-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Fakt';
+  src: url("../fonts/FaktPro-SemiBold.eot");
+  src: url("../fonts/FaktPro-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FaktPro-SemiBold.woff") format("woff"), url("../fonts/FaktPro-SemiBold.ttf") format("truetype")
+}
+
+html {
+  font-size: 87.5%;
+  font-family: "Fakt", "San Francisco", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 100%
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  font-family: "Fakt", "San Francisco", "BlinkMacSystemFont", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.4
+}
+
+h1 {
+  font-size: 1.953rem
+}
+
+h2,
+h3 {
+  font-size: 1.563rem
+}
+
+h4 {
+  font-size: 1.25rem
+}
+
+p,
+ul {
+  margin-top: 2rem;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.6
+}
+
+a {
+  display: inline-block;
+  color: #9b9b9b;
+  text-decoration: none;
+  font-weight: 300
+}
+
+a.util {
+  color: #333
+}
+
+::selection {
+  background-color: rgba(255, 174, 0, 0.5);
+  text-shadow: rgba(255, 174, 0, 0.5)
+}
+
+.faq__question {
+  font-weight: 600
+}
+
+.a-smart {
+  background: linear-gradient(#fff, #fff) no-repeat scroll 0px 77%/0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 77%/0.05em 1px, linear-gradient(#FFAE00, #FFAE00) repeat-x scroll 0px 77%/1px 1px transparent;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-decoration: none;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  opacity: 1
+}
+
+.a-smart:before,
+.a-smart:after,
+.a-smart *,
+.a-smart *:before,
+.a-smart *:after {
+  text-shadow: none
+}
+
+.a-smart::selection {
+  text-shadow: 0.03em 0 rgba(255, 174, 0, 0.1), -0.03em 0 rgba(255, 174, 0, 0.1), 0 0.03em rgba(255, 174, 0, 0.1), 0 -0.03em rgba(255, 174, 0, 0.1), 0.06em 0 rgba(255, 174, 0, 0.1), -0.06em 0 rgba(255, 174, 0, 0.1), 0.09em 0 rgba(255, 174, 0, 0.1), -0.09em 0 rgba(255, 174, 0, 0.1), 0.12em 0 rgba(255, 174, 0, 0.1), -0.12em 0 rgba(255, 174, 0, 0.1), 0.15em 0 rgba(255, 174, 0, 0.1), -0.15em 0 rgba(255, 174, 0, 0.1)
+}
+
+code {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+  padding: 0 3px;
+  color: #8D60F5
+}
+
+kbd {
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+  margin: 0 0.2rem;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  background-color: #f7f7f7
+}
+
+ul {
+  margin-top: 1rem;
+  padding-left: 2rem
+}
+
+.site-header {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between
+}
+
+nav a {
+  margin-right: 1rem;
+  color: #6d6e71
+}
+
+nav a:hover {
+  color: #333
+}
+
+nav a:last-child {
+  margin-right: 0
+}
+
+.nav-active {
+  color: #333;
+  font-weight: 400
+}
+
+section {
+  padding: 2rem 0
+}
+
+.hero {
+  padding-bottom: 3rem
+}
+
+.hero a {
+  color: #8D60F5;
+  margin-top: 1.5rem;
+  background: linear-gradient(#fff, #fff) no-repeat scroll 0px 82%/0.05em 1px, linear-gradient(#fff, #fff) no-repeat scroll 100% 82%/0.05em 1px, linear-gradient(#8D60F5, #8D60F5) repeat-x scroll 0px 82%/1px 1px transparent;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6
+}
+
+.hero .post-title {
+  font-weight: bold
+}
+
+.post-hero {
+  text-align: center
+}
+
+.post-hero h1 {
+  margin-bottom: 0.5rem;
+  pointer-events: none
+}
+
+.post-hero .date {
+  font-size: 11.57px;
+  color: #6d6e71;
+  margin-bottom: 3rem
+}
+
+.post-hero h4 {
+  margin-bottom: 2rem
+}
+
+.post-hero video,
+.post-hero img {
+  width: 100%
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: #6d6e71;
+  margin-top: 0.25rem
+}
+
+.faq a {
+  color: #333
+}
+
+.faq p:first-child,
+.faq ul:first-child {
+  margin-top: 0
+}
+
+.footer__emoji {
+  text-align: center
+}
+
+.post-preview {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.post-preview div {
+  width: 50%;
+  margin: 0 2rem
+}
+
+.post-preview img {
+  height: 100%;
+  width: 100%
+}
+
+.post-preview-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  color: #9b9b9b;
+  font-weight: 300
+}
+
+.post-preview-text div {
+  margin: 0.25rem;
+  width: 100%
+}
+
+.detail::before {
+  content: "◎";
+  font-size: .5rem;
+  height: 1rem;
+  margin: 0 .5rem 3rem 0;
+  vertical-align: middle
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  margin-top: 4rem;
+  padding: 1.8rem 0 5rem;
+  border-top: 1px solid #c6c1be
+}
+
+.site-footer p,
+.site-footer ul,
+.site-footer a {
+  margin: 0;
+  color: #6d6e71;
+  font-size: 1rem
+}
+
+#mc_embed_signup #mc_embed_signup_scroll {
+  display: flex;
+  align-items: baseline
+}
+
+#mc_embed_signup #mc_embed_signup_scroll input {
+  color: #6d6e71;
+  font-size: 0.8rem;
+  outline: none;
+  line-height: 2
+}
+
+#mc_embed_signup #mc_embed_signup_scroll .email {
+  width: 240px;
+  padding: 0 0.25rem;
+  margin-right: 0.5rem
+}
+
+#mc_embed_signup #mc_embed_signup_scroll .button {
+  padding: 0 0.25rem;
+  border: 1px solid #ABB0B2;
+  background-color: #fff;
+  border-radius: 2px
+}
+
+#mc_embed_signup #mc_embed_signup_scroll .button:hover {
+  border: 1px solid #8D60F5;
+  color: #8D60F5;
+  background-color: #fff
+}
