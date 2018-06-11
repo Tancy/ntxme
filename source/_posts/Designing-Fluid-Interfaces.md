@@ -33,58 +33,45 @@ Android系统自诞生以来的很多年使用体验上不都如iOS（更不用�
 
 ##### 返回主界面的时候可以滑动主界面
 
-<video width="100%" controls src="/images/designing_fluid_interfaces/Swipe_homescreen_pages_while_going_home.mp4?dl=1">
-</video>
-
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Swipe_homescreen_pages_while_going_home.mp4?dl=1"></video>
+<br/>
+<br/>
 
 ##### 在程序运行的时候启动多任务切换
- 2.gif 
 
+![](/images/designing_fluid_interfaces/Go to multitasking while app is launching.gif)
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Go to multitasking while app is launching.mp4?dl=1"></video>
+<br/>
+<br/>
 ##### 程序运行的时候关闭程序
- 3.gif 
+
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Close app while launching app.mp4?dl=1"></video>
+<br/>
+<br/>
 
 ##### 程序启动中就可以开始操作
- 4.gif 
 
-
-
-
-
-
-
-
-
-
-## 上下撞墙缓冲
-
-窗口上下区域的撞墙缓冲, 可以让用户更为舒服的认识到已经没有更多内容了. 
-但是在很多别的系统上, 没有这个设计, 感觉整个界面是死的. 
-
-
-##### 撞墙缓冲.gif 
-
-
-
-
-
-
-
-
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Interact with app as it launches.mp4?dl=1"></video>
+<br/>
+<br/>
 
 ## 计算位置动量 速度 力量
 
 
 如何激发多任务手势, 不是按照你滑动手指的时间来判断的, 按照你滑动的速度力量, 动量距离来判断什么时候激发多任务窗口. 
 
- 5.gif 
+<video width="100%" controls src="/images/designing_fluid_interfaces/How can we detect this pause in motion?.mp4?dl=1"></video>
+<br/>
+<br/>
 
- 6.gif 
 
 
 ## 动画转化加速度
 动画切换速度是有加速度的, 当你觉得窗口或者物体是加速向你靠近. 
 
- 7.gif 
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Hint in the direction of the gesture.mp4?dl=1"></video>
+<br/>
+<br/>
 
 
 
@@ -92,13 +79,17 @@ Android系统自诞生以来的很多年使用体验上不都如iOS（更不用�
 
 触摸按键的区域, 并不是准确的, 是在按钮的一个区域里面, 比如在计算器里, 当你按一个数字的时候, 你的触摸区域会在数字的圆圈里面, 并且还会在外面一点, 这样当你反悔的会后, 将手指移出区域, 按钮操作就会消失, 而当你返回的时候, 按钮数字会重新被选择. 
 
- 8.gif 
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Responding to Interaction.mp4?dl=1"></video>
+<br/>
+<br/>
 
 
 
 ## 3D Touch 点按重量判断激发操作
 
- 10.gif 
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Provide continuous feedback.mp4?dl=1"></video>
+<br/>
+<br/>
 
 
 
@@ -106,4 +97,10 @@ Android系统自诞生以来的很多年使用体验上不都如iOS（更不用�
 
 当用户激发了3D Touch后, 其实是用户按错了, 要是滚动, 那3D Touch操作就被取消, 重新执行滚动操作. 
 
- 11.gif 
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Combining gestures.mp4?dl=1"></video>
+<br/>
+
+## Fluidity as a Medium
+
+<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Fluidity as a Medium.mp4?dl=1"></video>
+<br/>
