@@ -33,7 +33,7 @@ Android系统自诞生以来的很多年使用体验上不都如iOS（更不用�
 
 ##### 返回主界面的时候可以滑动主界面
 
-<video width="100%" playsinline controls src="/images/designing_fluid_interfaces/Swipe_homescreen_pages_while_going_home.mp4?dl=1"></video>
+<video width="100%" playsinline controls poster="/images/803_designing_fluid_interfaces.jpg" src="/images/designing_fluid_interfaces/Swipe_homescreen_pages_while_going_home.mp4?dl=1"></video>
 <br/>
 <br/>
 
