@@ -8,6 +8,7 @@ categories:
 tag:
   - Design
   - Apple
+  - WWDC18
 date: 2018/06/10 20:57:06
 ---
 
@@ -103,3 +104,8 @@ Android系统自诞生以来的很多年使用体验上不都如iOS（更不用�
 
 ![](/images/designing_fluid_interfaces/Fluidity as a Medium.gif)
 <br/>
+
+### 参考资料
+
+- [视频地址](https://developer.apple.com/videos/play/wwdc2018/803/)
+- [PDF](https://devstreaming-cdn.apple.com/videos/wwdc/2018/803lpnlacvg2jsndx/803/803_designing_fluid_interfaces.pdf?dl=1)
