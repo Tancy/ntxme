@@ -90,9 +90,6 @@ Android系统自诞生以来的很多年使用体验上不都如iOS（更不用�
 <br/>
 <br/>
 
-
-![](/images/designing_fluid_interfaces/Go to multitasking while app is launching.gif)
-
 ## 3DTouch与滚动切换. 
 
 当用户激发了3D Touch后, 其实是用户按错了, 要是滚动, 那3D Touch操作就被取消, 重新执行滚动操作. 
